@@ -1,0 +1,8 @@
+<div class="py-4 mb-2">
+  <h3 class="d-inline-block">New Pizza</h3>
+</div>
+
+<%= formFor(pizza, {action: pizzasPath(), method: "POST"}) { %>
+  <%= partial("pizzas/form.html") %>
+  <%= linkTo(pizzasPath(), {class: "btn btn-warning", "data-confirm": "Are you sure?", body: "Cancel"}) %>
+<% } %>

@@ -1,0 +1,56 @@
+<div class="py-4 mb-2">
+  <h3 class="d-inline-block">Pizza Details</h3>
+
+  <div class="float-right">
+    <%= linkTo(pizzasPath(), {class: "btn btn-info"}) { %>
+      Back to all Pizzas
+    <% } %>
+    <%= linkTo(editPizzaPath({ pizza_id: pizza.ID }), {class: "btn btn-warning", body: "Edit"}) %>
+    <%= linkTo(pizzaPath({ pizza_id: pizza.ID }), {class: "btn btn-danger", "data-method": "DELETE", "data-confirm": "Are you sure?", body: "Destroy"}) %>
+  </div>
+</div>
+
+
+<ul class="list-group mb-2 ">
+
+  <li class="list-group-item pb-1">
+    <label class="small d-block">Sir</label>
+    <p class="d-inline-block"><%= pizza.Name %></p>
+  </li>
+
+
+  <li class="list-group-item pb-1">
+    <label class="small d-block">Size</label>
+    <p class="d-inline-block"><%= pizza.Size %> </p>
+  </li>
+
+
+
+  <li class="list-group-item pb-1">
+    <label class="small d-block">Ingredient #1</label>
+    <p class="d-inline-block"><%= pizza.Ingredient1 %></p>
+  </li>
+
+
+
+  <li class="list-group-item pb-1">
+    <label class="small d-block">Ingredient # 2</label>
+    <p class="d-inline-block"><%= pizza.Ingredient2 %></p>
+  </li>
+
+
+
+  <li class="list-group-item pb-1">
+    <label class="small d-block">Ingredient #3</label>
+    <p class="d-inline-block"><%= pizza.Ingredient3 %></p>
+  </li>
+
+
+
+  <li class="list-group-item pb-1">
+    <label class="small d-block">Ingredient #4</label>
+    <p class="d-inline-block"><%= pizza.Ingredient4 %></p>
+  </li>
+
+
+</ul>

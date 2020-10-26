@@ -1,0 +1,6 @@
+- id: "pizza.created.success"
+  translation: "Pizza was successfully created."
+- id: "pizza.updated.success"
+  translation: "Pizza was successfully updated."
+- id: "pizza.destroyed.success"
+  translation: "Pizza was successfully destroyed."

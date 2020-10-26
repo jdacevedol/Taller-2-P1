@@ -1,0 +1,10 @@
+create_table("pizzas") {
+	t.Column("id", "uuid", {primary: true})
+	t.Column("name", "string", {})
+	t.Column("size", "string", {})
+	t.Column("ingredient1", "string", {})
+	t.Column("ingredient2", "string", {})
+	t.Column("ingredient3", "string", {})
+	t.Column("ingredient4", "string", {})
+	t.Timestamps()
+}
